@@ -4,6 +4,8 @@ import './App.css'
 import TabBarCities from '/src/components/TabBarCities.jsx'
 import Inputs from '/src/components/Inputs.jsx'
 import TimeAndLocation from '/src/components/TimeAndLocation.jsx'
+import TemperatureAndDetails from '/src/components/TemperatureAndDetails.jsx'
+import Forecast from '/src/components/Forecast.jsx'
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
         <TabBarCities />
         <Inputs />
         <TimeAndLocation />
+        <TemperatureAndDetails />
+        <Forecast />
       </div>
     </div>
   )
