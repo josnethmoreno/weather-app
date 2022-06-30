@@ -10,8 +10,47 @@ const getWeatherData = (info, params) => {
 		.then(data => data)
 }
 
-const getFormattedWeatherData = (params) => {
-	const formattedCurrentWeather = await getWeatherData('weather')
+const formatCurrentWeather = (data) => {
+	const {
+		coord: {lat, lon},
+		main: {temp, feels_like, temp_min, temp_max, humidity},
+		name,
+		dt,
+		sys: {country, sunrise, sunset},
+		weather,
+		wind: {speed},
+	} = data
+
+	const {main: details, icon} = weather[0]
+
+	return { lat, lon, temp, feels_like, temp_min, temp_max, humidity, name, dt, country, sunrise, sunset, weather, speed }
 }
 
-export { getWeatherData, getFormattedWeatherData};
+const formatForecastWeather = (data) => {
+	let { timezone, daily, hourly } = data;
+	daily = daily.slice(1,6).map()
+}
+
+const getFormattedWeatherData = async (params) => {
+	const formattedCurrentWeather = await getWeatherData('weather', params).then(formatCurrentWeather);
+
+	const { lat, lon } = formattedCurrentWeather;
+
+	const formattedForecastWeather = await getWeatherData('onecall', {
+		lat,
+		lon,
+		exclude: 'currently,minutely,alerts',
+		units: params.units,
+	}).then(formatForecastWeather)
+	
+	return formattedCurrentWeather 	
+}
+
+const formatToLocalTime = (
+	secs, 
+	zone, 
+	format = 'cccc, dd LLL yyyy | Local time: hh:mm a'
+) => DateTime.fromSeconds(secs).setZone(zone).toFormat(format);
+
+
+export default getFormattedWeatherData

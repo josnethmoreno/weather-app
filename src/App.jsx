@@ -7,15 +7,15 @@ import TimeAndLocation from '/src/components/TimeAndLocation.jsx'
 import TemperatureAndDetails from '/src/components/TemperatureAndDetails.jsx'
 import Forecast from '/src/components/Forecast.jsx'
 
-/*import getWeatherData from '/src/services/weatherService.js'*/
+import getFormattedWeatherData from '/src/services/weatherService.js'
 
 function App() {
-  /* const fetchWeather = async () => {
-    const data = await getWeatherData('weather', { q: 'london' });
+  const fetchWeather = async () => {
+    const data = await getFormattedWeatherData({ q: 'london' });
     console.log(data)
   }
 
-  fetchWeather(); */
+  fetchWeather(); 
 
   return (
     <div className="App text-white">
