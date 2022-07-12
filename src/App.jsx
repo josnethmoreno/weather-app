@@ -34,8 +34,8 @@ function App() {
   }
 
   return (
-    <div className="App text-white">
-      <div className={`mx-auto max-w-screen-md mt-4 py-5 px-4 md:px-24 bg-gradient-to-br ${formatBackground()} h-fit shadow-xl shadow-gray-400`}>
+    <div className={`App flex text-white bg-gradient-to-br ${formatBackground()} min-h-screen`} >
+      <div className='mx-auto max-w-screen-md md:py-10 pb-5 px-4 md:px-24 h-fit'>
         <TabBarCities setQuery={setQuery}/>
         <Inputs setQuery={setQuery} units setUnits={setUnits} />
 
