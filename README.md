@@ -8,7 +8,7 @@ Application to view the weather conditions of all cities in the world.
 
 ![](src/preview/preview.png)
 
-[Live Preview](https://weather-app-josneth.netlify.app/){:target="_blank"}
+[Live Preview](https://weather-app-josneth.netlify.app/){target="_blank"}
 
 
 ## Dependencies
