@@ -5,7 +5,7 @@ const TimeAndLocation = ({weather: {dt, timezone, name, country}}) => {
   return (
   	<div className="">
   		<div className="flex items-center justify-center">
-  			<p className="text-xl font-light">
+  			<p className="text-xl font-light text-center">
     			{formatToLocalTime(dt, timezone)}
   			</p>
   		</div>

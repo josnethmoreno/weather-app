@@ -63,39 +63,56 @@ const TemperatureAndDetails = ({
 	    		</div>
     		</div>
 
-    		<div className="flex flex-row items-center justify-center space-x-2 text-sm py-3">
-				  <UilSun />
-				  <p>
-					  Rise: 
-					  <span className="font-semibold ml-1">
-						  {formatToLocalTime(sunrise, timezone, 'hh:mm a')}
-					  </span>
-				  </p>
-				  <p>|</p>
-				  <UilSunset />
-				  <p>
-					  Set: 
-					  <span className="font-semibold ml-1">
-						  {formatToLocalTime(sunset, timezone, 'hh:mm a')}
-					  </span>
-				  </p>
-				  <p>|</p>
-				  <UilSun />
-				  <p>
-					  High: 
-					  <span className="font-semibold ml-1">
-						  {`${temp_max.toFixed()}°`}
-					  </span>
-				  </p>
-				  <p>|</p>
-				  <UilSun />
-				  <p>
-					  Low:
-					  <span className="font-semibold ml-1">
-						  {`${temp_min.toFixed()}°`}
-					  </span>
-				  </p>
-				  <p>|</p>
+    		<div className="flex flex-col sm:flex-row flex-wrap sm:items-center justify-center md:text-sm gap-2 sm:gap-0 py-3">
+				  <div className="flex gap-1">
+					  <UilSun />
+				  	<p>
+						  Rise: 
+						  <span className="font-semibold ml-1">
+							  {formatToLocalTime(sunrise, timezone, 'hh:mm a')}
+						  </span>
+					  </p>
+					  <p className="hidden sm:block mx-1">|</p>
+				  </div>
+				  <div className="flex gap-1">
+				  	<UilSunset />
+					  <p>
+						  Set: 
+						  <span className="font-semibold ml-1">
+							  {formatToLocalTime(sunset, timezone, 'hh:mm a')}
+						  </span>
+					  </p>
+					  <p className="hidden sm:block mx-1">|</p>
+				  </div>
+				  <div className="flex gap-1">
+				  	<UilSun />
+					  <p>
+						  High: 
+						  <span className="font-semibold ml-1">
+							  {`${temp_max.toFixed()}°`}
+						  </span>
+					  </p>
+				  <p className="hidden sm:block mx-1">|</p>
+				  </div>
+				  <div className="flex gap-1">
+				  	<UilSun />
+					  <p>
+						  High: 
+						  <span className="font-semibold ml-1">
+							  {`${temp_max.toFixed()}°`}
+						  </span>
+					  </p>
+					  <p className="hidden sm:block mx-1">|</p>
+				  </div>
+				  <div className="flex gap-1">
+				  	<UilSun />
+					  <p>
+						  Low:
+						  <span className="font-semibold ml-1">
+							  {`${temp_min.toFixed()}°`}
+						  </span>
+					  </p>
+				  </div>
     		</div>
     	</div>
     );

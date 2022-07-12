@@ -29,7 +29,7 @@ const TabBarCities = ({ setQuery }) => {
     	{
     		cities.map((city) => (
     			<button 
-	    			className="text-lg font-medium" 
+	    			className="hidden md:block text-lg font-medium" 
 	    			key={city.id}
 	    			onClick={() => setQuery({ q: city.name })}
     			>
