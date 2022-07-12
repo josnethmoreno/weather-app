@@ -1,7 +1,9 @@
 <div id="top"></div>
 
 # Github Profile Search
-This app is a github developer search engine. The github public API is consumed with fetch, async and await. To obtain and paint the data of the searched user
+Application to view the weather conditions of all cities in the world. 
+
+<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="">
 
 <img src="src/preview/preview.png" alt="Preview UI">
 
