@@ -3,7 +3,8 @@
 # Github Profile Search
 Application to view the weather conditions of all cities in the world. 
 
-<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="">
+### Built with:
+<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt=""> <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="">
 
 <img src="src/preview/preview.png" alt="Preview UI">
 
