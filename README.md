@@ -3,12 +3,14 @@
 # Weather app
 Application to view the weather conditions of all cities in the world. 
 
-#### Built with:
+### Built with:
 <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt=""> <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt=""> <img src="https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white" alt="">
 
-<img src="src/preview/preview.png" alt="Preview UI">
+!(src/preview/preview.png "San Juan Mountains")
 
-[Live Preview](https://weather-app-josneth.netlify.app/)
+<img src="" alt="Preview UI">
+
+[Live Preview](https://weather-app-josneth.netlify.app/){:target="_blank"}
 
 
 ## Dependencies
